@@ -1,0 +1,47 @@
+.navbar {
+  min-width: 100vw;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background-color: #006aba;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.icon {
+  padding-left: 20px;
+}
+
+.list {
+  display: flex;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+nav > ul {
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding: 1rem 0.5rem;
+}
+
+nav > ul > li > a {
+  box-shadow: inset 0 0 0 0 #006aba;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-decoration: none;
+  color: #000000;
+}
+
+nav > ul > li > a:hover {
+  box-shadow: inset 100px 0 0 0 #006aba;
+  color: white;
+}
