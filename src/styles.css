@@ -1,9 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  font-family: sans-serif;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-gutter: stable;
+  background: #e8eaee;
 }

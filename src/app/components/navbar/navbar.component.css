@@ -1,6 +1,7 @@
 .navbar {
-  min-width: 100vw;
-  height: auto;
+  width: 100%;
+  scrollbar-gutter: stable;
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
@@ -22,11 +23,12 @@
 }
 
 nav {
-  margin-right: 20px;
+  padding-right: 20px;
 }
 
 nav > ul {
   padding: 0;
+  margin: 0;
 }
 
 nav > ul > li {
