@@ -1,16 +1,20 @@
-import { Component, Input } from '@angular/core';
-import { Product } from './../../models/product.model';
+import { Component, OnInit } from '@angular/core';
+import { Product } from './../../models/Products';
+import { ProductService } from 'src/app/services/api/products/product.service';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css'],
 })
-export class ProductsComponent {
-  @Input() product: Product = {
-    title: '',
-    price: 0,
-    images: [],
-    id: 0,
-  };
+export class ProductsComponent implements OnInit {
+  constructor(private service: ProductService) {}
+
+  ngOnInit(): void {
+    this.service.getAllProductsWithLimit().subscribe({
+      next: (data: Product[]) => {
+        console.log(data);
+      },
+    });
+  }
 }
